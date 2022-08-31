@@ -86,6 +86,7 @@ public class MemberTestRepository extends Querydsl4RepositorySupport {
     }
 
     private BooleanExpression ageGoe(Integer ageGoe) {
+
         return ageGoe != null ? member.age.goe(ageGoe) : null;
     }
 
